@@ -1,0 +1,292 @@
+/* styles.css */
+body {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b); /* Fondo con más contraste */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Mejor legibilidad */
+  scroll-behavior: smooth; /* Scroll suave */
+}
+/* Animaciones */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  color: #03a3ff;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #7876e7, #3677d8);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección Informativa */
+section {
+  animation: fadeIn 1s ease-in-out;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+section h2 {
+  color: #4ac8ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+section ul li {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+button {
+  background: #4ac8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #358fbf;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  background-color: #121212; /* Fondo oscuro para tu tema */
+  background: linear-gradient(135deg, #121212, #1b263b);
+  padding: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Efecto zoom al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+}
+/* Asegúrate de incluir estos estilos en tu archivo CSS */
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-container img {
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Estilos generales para el foro */
+.forum-container {
+  background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Título del foro */
+h2 {
+  text-align: center;
+  color: #4ac8ff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Formulario de comentarios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.forum-container {
+  background: linear-gradient(135deg, #1b263b, #0d1b2a);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1em;
+  width: 100%; /* Asegura que el campo de texto ocupe todo el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding no haga que el campo se desborde */
+  resize: vertical; /* Permite que el textarea se redimensione verticalmente, pero no horizontalmente */
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  padding: 12px;
+  background-color: #4ac8ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #358fbf;
+}
+
+/* Estilos para los comentarios */
+.comment-container {
+  margin-top: 20px;
+}
+
+.comment {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.comment strong {
+  color: #4ac8ff;
+  font-size: 1.1em;
+}
+
+.comment p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.comment small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+}
+
+.comment-time {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .forum-container {
+    padding: 15px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+
+  input, textarea {
+    font-size: 0.95em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
+/* Footer */
+footer {
+  background: #090b20;
+  color: #4ac8ff;
+  text-align: center;
+  padding: 30px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 1em;
+  animation: fadeIn 2s ease-in-out;
+}
